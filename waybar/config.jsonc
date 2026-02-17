@@ -59,7 +59,7 @@
       "format": "󰃠 {}% ",
       "interval": 5,
       "exec": "ddcutil getvcp 10 | sed -n 's/.*current value = *\\([0-9]*\\),.*/\\1/p'",
-      "on-click": "hyprctl dispatch exec '[float; center; size 40% 70%]' '~/.config/waybar/scripts/ddc-brightness.sh'",
+      "on-click": "hyprctl dispatch exec '[float; center; size 20% 50%]' '~/.config/waybar/scripts/ddc-brightness.sh'",
       "on-scroll-up": "ddcutil setvcp 10 +5",
       "on-scroll-down": "ddcutil setvcp 10 -5"
   },

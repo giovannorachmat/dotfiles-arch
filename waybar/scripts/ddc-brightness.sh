@@ -7,7 +7,7 @@ get_brightness() {
 
 # Set brightness
 set_brightness() {
-    ddcutil setvcp 10 "$1" --sleep-multiplier=0.5 --noverify >/dev/null 2>&1
+    ddcutil --sleep-multiplier=1 setvcp 10 "$1" --noverify >/dev/null 2>&1
 }
 
 # If called with argument, set brightness
