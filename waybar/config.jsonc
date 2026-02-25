@@ -117,8 +117,16 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth"
+    "on-click": "hyprctl dispatch exec '[float; center; size 30% 40%]' 'blueman-manager'",
   },
+  // "bluetooth": {
+  //   "format": "",
+  //   "format-disabled": "󰂲",
+  //   "format-connected": "󰂱",
+  //   "format-no-controller": "",
+  //   "tooltip-format": "Devices connected: {num_connections}",
+  //   "on-click": "omarchy-launch-bluetooth"
+  // },
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "hyprctl dispatch exec '[float; center; size 40% 70%]' 'pavucontrol -t 3'",
